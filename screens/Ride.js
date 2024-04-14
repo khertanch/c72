@@ -102,6 +102,7 @@ export default class RideScreen extends Component {
           <View style={[styles.textinputContainer, { marginTop: 25 }]}>
             <TextInput
               style={styles.textinput}
+              onChangeText={(text) => this.setState({ bikeId: text })}
               placeholder={"Bicycle Id"}
               placeholderTextColor={"#FFFFFF"}
               value={bikeId}
